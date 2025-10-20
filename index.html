@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SURREALE SYMMETRIE</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: url('sursym.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Calisto MT', serif;
+      color: #4B0082; /* dunkles Violett */
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(152, 255, 204, 0.7); /* mintgrün halbtransparent */
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 800px;
+      margin: 60px auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      font-family: 'Calisto MT', serif;
+      font-size: 1.5em;
+      margin-bottom: 1.5em;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 1.5em;
+    }
+
+    audio {
+      width: 100%;
+      margin: 30px 0 10px;
+      accent-color: #BFFF00; /* leuchtendes Gelbgrün */
+    }
+
+    ul.playlist {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto 40px;
+      max-width: 600px;
+    }
+
+    ul.playlist li {
+      padding: 10px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(75,0,130,0.3);
+      transition: background 0.3s;
+    }
+
+    ul.playlist li.active {
+      background: rgba(75,0,130,0.2);
+      font-weight: bold;
+      color: #98FFCC; /* mintgrün */
+    }
+
+    .contact-block {
+      margin-top: 40px;
+    }
+
+    .contact-block p {
+      margin-bottom: 20px;
+    }
+
+    .mail-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #4B0082;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      transition: background 0.3s;
+    }
+
+    .mail-btn:hover {
+      background: #2E0854;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        max-width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>SURREALE SYMMETRIE</h1>
+    <h2>eine Stimme mit vielen Facetten</h2>
+
+    <p>
+      Bist du auf der Suche nach Stimmenvielfalt für dein Projekt?<br>
+      Dann bist du hiermit fündig geworden!
+    </p>
+
+    <p>
+      <strong>Hinweis:</strong><br>
+      Um meine Stimmfacetten in einem einheitlichen Thema zu kategorisieren und dir gleichzeitig ein bisschen Entertainment zu bieten, präsentiere ich dir ein kleines Märchen. Das entspricht aber keiner Genre-Spezifizierung meinerseits.
+    </p>
+
+    <p>
+      Bisher habe ich Hörbücher in den Genres Fantasy und <strong>[Dark] Romance</strong> eingesprochen/produziert.<br>
+      Ich freue mich auf Herausforderungen in neuen Bereichen!
+    </p>
+
+    <p>
+      Im Folgenden kannst du dir ein Gesamtbild von meiner stimmlichen Leistung machen und/oder einzelne “Sprechblasen” der Figuren aus dem Märchen hören, um sie direkt miteinander zu vergleichen.<br>
+      Vielleicht erkennst du ja die Stimme einer deiner Figuren wieder…
+    </p>
+
+    <!-- Audio Player -->
+    <audio id="player" controls preload="auto"></audio>
+
+    <!-- Playlist -->
+    <ul class="playlist" id="playlist">
+      <li data-src="Märchen.mp3">Es war einmal eine Stimme…</li>
+      <li data-src="Prinzessin.mp3">Die Erzählerin</li>
+      <li data-src="Assassinin.mp3">Die Assassinin</li>
+      <li data-src="Prinzessin.mp3">Die Prinzessin</li>
+      <li data-src="Wirtin.mp3">Die Wirtin</li>
+      <li data-src="Fee.mp3">Die Fee</li>
+      <li data-src="Prinz.mp3">Der Prinz</li>
+      <li data-src="Elfenkönig.mp3">Der Elfenkönig</li>
+      <li data-src="Kamerad.mp3">Der Kamerad</li>
+      <li data-src="Zauberin.mp3">Die Zauberin</li>
+      <li data-src="Königin.mp3">Die Königin</li>
+      <li data-src="Mütterchen.mp3">Das Mütterchen</li>
+      <li data-src="König.mp3">Der König</li>
+      <li data-src="Lehrmeister.mp3">Der Lehrmeister</li>
+      <li data-src="Schurke.mp3">Der Schurke</li>
+      <li data-src="Kind.mp3">Das Kind</li>
+      <li data-src="Wesen.mp3">Das seltsame Wesen</li>
+      <li data-src="Drache.mp3">Der sprechende Drache</li>
+      <li data-src="Dialogschnipsel.mp3">Ein Dialogschnipsel</li>
+    </ul>
+
+    <!-- Kontaktblock -->
+    <div class="contact-block">
+      <p>
+        Sind das noch nicht genug Stimmen für dein Projekt?<br>
+        Keine Sorge – da sind noch viele mehr!<br>
+        Und einige werden extra für deine Geschichte entstehen.<br><br>
+        Wenn du möchtest, schau in Fairy Falls vorbei und hör dir meine Stimme kostenlos und werbefrei im Einsatz an.<br><br>
+        Alternativ lade ich dich ein, mir unverbindlich eine Leseprobe zu schicken – maximal 3 Normseiten.<br>
+        Vergiss dabei nicht, mir Besonderheiten in der Aussprache zu nennen und in jedem Fall, wie die Namen ausgesprochen werden (z.Bsp. deutsch/englisch)
+      </p>
+
+      <a class="mail-btn" href="mailto:surrealesymmetrie@gmail.com">📧 Mail an surrealesymmetrie@gmail.com</a>
+    </div>
+  </div>
+
+  <script>
+    const player = document.getElementById('player');
+    const playlist = document.getElementById('playlist');
+    const tracks = playlist.getElementsByTagName('li');
+    let current = 0;
+
+    function loadTrack(index) {
+      for (let i = 0; i < tracks.length; i++) {
+        tracks[i].classList.remove('active');
+      }
+      tracks[index].classList.add('active');
+      player.src = tracks[index].getAttribute('data-src');
+      player.load();
+    }
+
+    function playTrack(index) {
+      loadTrack(index);
+      player.play();
+    }
+
+    for (let i = 0; i < tracks.length; i++) {
+      tracks[i].addEventListener('click', () => {
+        current = i;
+        playTrack(current);
+      });
+    }
+
+    player.addEventListener('ended', () => {
+      current++;
+      if (current >= tracks.length) current = 0;
+      loadTrack(current);
+    });
+
+    // Highlight active track
+    player.addEventListener('play', () => {
+      for (let i = 0; i < tracks.length; i++) {
+        tracks[i].classList.remove('active');
+      }
+      tracks[current].classList.add('active');
+    });
+
+    // Initial track
+    loadTrack(current);
+  </script>
+</body>
+</html>
